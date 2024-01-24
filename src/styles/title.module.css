@@ -1,0 +1,30 @@
+
+
+@media (max-width: 950px) {
+    .pageTitle {
+        border: 2px solid #4b4b4b;
+        background-color: transparent;
+
+    }
+}
+
+
+@media (max-width: 750px) {
+    .pageTitle {
+        font-size: 45px;
+        line-height: 25px;
+        letter-spacing: 5px;
+        width: 95%;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 450px) {
+    .pageTitle {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 5px;
+        width: 95%;
+        background-color: transparent;
+    }
+}

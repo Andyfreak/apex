@@ -1,0 +1,319 @@
+.topWrapper {
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.topWrapper:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 80%;
+    filter: contrast(200%);
+    content: '';
+}
+
+.servicesTitle {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    background-color: rgba(68, 70, 64, 0.3);
+    font-family: 'Apexnewweb book', sans-serif;
+    color: #f5f1f1;
+    font-size: 62px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    width: 70%;
+    z-index: 4;
+}
+
+.textTitleContainer {
+    max-width: 90%;
+    width: 100%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topWrapper_servicesTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.topBlockHr {
+    height: 1px;
+    width: 35%;
+    background-color: #b6bdab;
+}
+
+.servicesInnerTitle {
+    font-family: 'Apexnewweb book', sans-serif;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #b6bdab;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.servicesText {
+    margin-top: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #a0b9a1;
+    align-self: center;
+    text-align: center;
+}
+
+.bodySection {
+    display: flex;
+    height: 100vh;
+}
+
+.bodyContainer {
+    width: 100%;
+    background: url("https://apextest12.b-cdn.net/generalPhotosApex/iStock-1028568006.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    filter: grayscale(0);
+    display: flex;
+    justify-content: space-between;
+}
+.bodyContainer:after{
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f3f3ef;
+    opacity: 80%;
+
+}
+.bodyContainerTextPart {
+    z-index: 10;
+    width: 30%;
+    background: #465644;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bodyContainerContentPart {
+    z-index: 10;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.bodyContainerTitle {
+    font-family: 'Apexnewweb book', sans-serif;
+    color: #6c6262;
+    font-size: 60px;
+    line-height: 25px;
+    font-weight: 600;
+    position: relative;
+    text-align: left;
+    padding: 20px 10px 20px 10px;
+}
+.bodyContainerTitle:after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    height: 3px;
+    width: 400px;
+    background: #6c6262;
+}
+
+.servicesTitles {
+    font-family: 'Apexnewweb book', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    border: 4px solid #e7dfe0;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+}
+.servicesDescriptionText{
+    font-family: 'Apexnewweb book', sans-serif;
+    color: #696262;
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 600;
+    position: relative;
+}
+@media (max-width: 1200px) {
+    .servicesTitle {
+        font-size: 62px;
+        line-height: 60px;
+    }
+}
+@media (max-width: 950px) {
+    .bodyContainer{
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .bodyContainerContentPart{
+        width: 100%;
+        overflow: auto;
+    }
+    .bodyContainerTextPart{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 200px;
+        align-items: center;
+    }
+    .servicesDescriptionText{
+        margin-left: 10px;
+    }
+    .servicesTitles{
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        text-align: center;
+        border: 2px solid #e7dfe0;
+        border-radius: 10px;
+        padding: 10px 10px 10px 10px;
+        margin: 3px;
+    }
+    .servicesTitle {
+        font-size: 62px;
+    }
+}
+
+@media (max-width: 750px) {
+    .bodyContainerTextPart{
+        height: 200px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .servicesTitle {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .servicesTitles{
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px 8px 5px 8px;
+        margin: 3px;
+    }
+    .topBlockHr {
+        height: 1px;
+        width: 20%;
+    }
+    .servicesInnerTitle {
+        width: 50%;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #b6bdab;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+
+}
+@media (max-width: 630px) {
+    .servicesTitles{
+        border: 2px solid #e7dfe0;
+        border-radius: 10px;
+        padding: 5px 8px 5px 8px;
+        width: 300px;
+    }
+    .bodyContainerTitle{
+        font-size: 45px;
+        line-height: 20px;
+        font-weight: 600;
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+    }
+    .bodyContainerTitle:after{
+        left: 70px;
+    }
+    .servicesText{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .bodyContainer{
+        height: 90vh;
+    }
+    .servicesTitle {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 5px;
+        padding: 10px 15px;
+        background: transparent;
+        border: 2px solid #d0c9c9;
+    }
+    .bodyContainerTitle:after{
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        height: 3px;
+        width: 300px;
+        background: #6c6262;
+        left: 40px;
+    }
+    .topWrapper_servicesTitle{
+        justify-content: center;
+    }
+    .textTitleContainer{
+        max-width: 95%;
+    }
+    .topBlockHr {
+      display: none;
+    }
+    .servicesInnerTitle {
+        width: 70%;
+    }
+    .servicesText {
+        font-size: 14px;
+        line-height: 18px;
+        max-width: 100%;
+    }
+}

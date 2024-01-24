@@ -1,0 +1,89 @@
+.admin_home{
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.linksWrapper{
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   align-items: center;
+   width: 90%;
+   position: relative;
+}
+.goAwayBtn{
+   position: absolute;
+   top:0;
+   right: 10px;
+   cursor: pointer;
+}
+.contentWrapper{
+   max-width: 1450px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 30px;
+}
+
+.projectTitleWrapper{
+   max-width: 45%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+
+}
+.projectWrapper{
+   width: 100%;
+}
+.projectTitle{
+   margin-top: 0;
+   max-width: 70%;
+   width: 100%;
+   font-family: Nunito, sans-serif;
+   font-size: 16px;
+   line-height: 22px;
+   letter-spacing: 0;
+   text-transform: none;
+   color: #100a0a;
+   align-self: center;
+   text-align: center;
+   cursor: pointer;
+}
+.chooseSubjectText{
+   font-family: Nunito, sans-serif;
+   font-size: 16px;
+   line-height: 22px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+.popupWindowInfo{
+   position: absolute;
+   top:40%;
+   left: 40%;
+   height: 200px;
+   max-width: 450px;
+   width: 100%;
+   background: #e6e8ee;
+   box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
+   font-family: Nunito, sans-serif;
+   font-size: 28px;
+   line-height: 42px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   border-radius: 25px;
+   text-transform: uppercase;
+}
+.adminButtonsContainer{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}

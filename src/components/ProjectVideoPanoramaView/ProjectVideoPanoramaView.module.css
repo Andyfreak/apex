@@ -1,0 +1,105 @@
+.modalOverlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    z-index: 6;
+    background: black;
+
+}
+.modalContainer{
+    position: absolute;
+    top:55%;
+    left: 50%;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 338;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 150px;
+    background-position-y: -70px;
+    background-color: #1f0b0b;
+}
+.modalContainerInnerOverlay{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-image: linear-gradient(90deg,#fff,hsla(0,0%,100%,.7));
+    overflow-y: scroll;
+
+}
+.panoramaContainer{
+    width: 100%;
+    border:2px solid red;
+}
+.body {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 500ms;
+}
+
+.title{
+    font-family: Nunito, sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #8d9382;
+    font-weight: 100;
+    text-align: left;
+    background-color: transparent;
+}
+.modalText{
+    font-family: Nunito,sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #8d9382;
+}
+.modalContainerInner{
+    display: flex;
+    flex-direction: column;
+}
+.closeButton{
+    position: absolute;
+    top:20px;
+    right: -60px;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.5s;
+}
+.closeButton:hover{
+    rotate: z 90deg;
+}
+
+@media (max-width: 1000px) {
+    .modalContainer{
+        width: 80%;
+    }
+}
+@media (max-width: 750px) {
+    .modalContainer{
+        width: 99%;
+    }
+    .closeButton{
+        right: 20px;
+        top:10px;
+        background-color: #a61730;
+        opacity: 50%;
+    }
+    .closeButton:hover{
+        opacity: 80%;
+    }
+}

@@ -1,0 +1,166 @@
+.topWrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.videoBlockWrapper {
+    height: 90%;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoBlockOverlayWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 50%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}
+
+.projectsBlockVideoBg {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.projectTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgba(68, 70, 64, 0.3);
+    font-family: 'Apexnewweb book', sans-serif;
+    color: #f5f1f1;
+    font-size: 62px;
+    line-height: 35px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    width: 70%;
+    z-index: 4;
+}
+
+.buttonsContainer {
+    background-color: #8d9382;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+    position: relative;
+
+}
+
+.projectTypeButton {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    background: #f1efef;
+    font-family: 'Apexnewweb book',sans-serif;
+    color: #8d9382;
+    line-height: 20px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.projectBody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1550px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top:40px;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropDownSelect{
+    height: 40px;
+    border-bottom: 2px solid #c9d0be;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.dropDownSelect:hover{
+    background: #727769;
+    color: #c1c9b3;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 1005px) {
+    .pageTitle {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 65px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .projectTitle {
+        border: 2px solid grey;
+        background-color: transparent;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 65px;
+    }
+}
+
+@media (max-width: 750px) {
+    .pageTitle {
+        font-size: 45px;
+        line-height: 25px;
+        letter-spacing: 5px;
+        width: 95%;
+        background-color: transparent;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectTitle {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 5px;
+        width: 95%;
+        background-color: transparent;
+    }
+}

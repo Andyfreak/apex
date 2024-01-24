@@ -1,0 +1,14 @@
+.customButton{
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #d8d8d8;
+    font-family: 'Apexnewweb book',sans-serif;
+    color: #333;
+    line-height: 20px;
+    width: 350px;
+    height: 40px;
+
+}

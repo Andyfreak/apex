@@ -1,0 +1,28 @@
+
+html {
+  box-sizing: border-box;
+  font-family: 'Apexnewweb book',sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color:wheat;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+.root{
+  height: 100vh;
+  overflow: hidden;
+
+}

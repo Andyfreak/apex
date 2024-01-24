@@ -1,0 +1,56 @@
+.mobileMenuContainer{
+    background-image: url("https://apextest12.b-cdn.net/officeBcg.webp");
+    filter: grayscale(1) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.mobileMenuContainer:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: #b8c0c2;
+    opacity: 70%;
+}
+.linksWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    z-index: 5;
+}
+.menuLink{
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-family: 'Apexnewweb book',sans-serif;
+    color: #fa0303;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+}
+
+:root {
+    --animate-delay: 0.1s !important;
+}
+@media (max-width: 550px) {
+    .menuLink{
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+

@@ -1,0 +1,20 @@
+.navContainer{
+
+}
+.navContainer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+.headerLink{
+    font-family: 'Apexnewweb book',sans-serif;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.headerLink:hover{
+  color:#a61730;
+}

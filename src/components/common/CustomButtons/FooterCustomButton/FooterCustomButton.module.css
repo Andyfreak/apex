@@ -1,0 +1,23 @@
+.footerCustomButton{
+    display: flex;
+    margin: 10px;
+    padding: 15px 20px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #d8d8d8;
+    background-color: transparent;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-family: 'Apexnewweb book',sans-serif;
+    color: #707070;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footerCustomButton:hover{
+    background-color: #cbccc6;
+}

@@ -1,0 +1,219 @@
+.topWrapper{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.topWrapper:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 60%;
+    top: 0;
+    left: 0;
+}
+.bcgImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+
+}
+.projectViewContainer {
+    position: relative;
+}
+
+.detailBlockExtention {
+    position: fixed;
+    rotate: 90deg;
+    top: 58%;
+    left: -50px;
+    width: 150px;
+    height: 50px;
+    background: #8d9382;
+    z-index: 5;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Apexnewweb, sans-serif;
+    color: #f0f1ef;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+.topBlockTextWrapper {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.topTitle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    border: 2px solid #8d9382;
+    background-color: transparent;
+    line-height: 75px;
+    color: #fff;
+    font-family: 'Apexnewweb book', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.topLocaton {
+    font-family: 'Apexnewweb book', sans-serif;
+    width: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.topText {
+    margin-top: 0;
+    max-width: 70%;
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: Nunito, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #fff;
+    align-self: center;
+    text-align: center;
+}
+
+.topWrapper_cityContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.topBlockHr {
+    height: 1px;
+    width: 35%;
+    background-color: #b6bdab;
+}
+
+.bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.projectVideo{
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    position: relative;
+
+}
+.projectVideoPlayer{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    filter: grayscale(80%) blur(15px);
+    z-index: 3;
+}
+.projectVideoPlayerOverlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: black;
+    opacity: 80%;
+    z-index: 4;
+}
+
+.projectVideoPlayerOverlayTitle{
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    font-weight: 200;
+    font-size: 32px;
+    color: white;
+    font-family: 'Apexnewweb book', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    z-index: 5;
+    text-transform: uppercase;
+}
+.playBtnOverlay{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 100px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 20%;
+    transition: opacity 0.5s;
+}
+.playBtnOverlay:hover{
+    opacity: 70%;
+}
+.modalVideoOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 80%;
+}
+@media (max-width: 950px) {
+    .topTitle{
+        font-size: 62px;
+
+    }
+}
+@media (max-width: 750px) {
+    .topTitle{
+        line-height: 55px;
+    }
+    .topBlockTextWrapper{
+        width: 95%;
+    }
+}
+@media (max-width: 450px) {
+    .topTitle {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 5px;
+        padding: 10px 15px ;
+        background: transparent;
+        border:2px solid #b6bdab;
+    }
+    .topText{
+        font-size: 18px;
+        max-width: 90%;
+    }
+    .projectVideoPlayerOverlayTitle{
+        font-size: 24px;
+    }
+}
